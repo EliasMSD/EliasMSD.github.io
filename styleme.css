@@ -1,0 +1,36 @@
+
+body {background-color: rgb(236, 228, 218);
+
+
+}
+
+p{
+    font-size: 24;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    
+}
+h2:hover{
+    color: blue;
+    text-align: center;
+
+
+}
+ul:hover{
+    color: rgb(255, 153, 0);
+    background-color: crimson;
+}
+img:hover{
+    zoom: normal;
+}
+a:hover{
+    background-color: rgb(246, 240, 255);
+}
+
+#special{
+    background-color: rgb(21, 202, 112);
+    
+}
+h1{
+    color: rgb(153, 144, 238);
+}
