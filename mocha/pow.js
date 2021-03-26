@@ -21,4 +21,4 @@
     return result;
 }
 
-
+//module.exports={pow}
