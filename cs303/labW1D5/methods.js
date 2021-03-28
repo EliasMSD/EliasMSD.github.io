@@ -112,6 +112,9 @@ copySorted(sorted)
 // alert(sorted);
 // alert(arr);
 
+let hike = '1043huthuthut’;
+let what = parseInt(hike, 10);
+
 // function getAverageAge(users) {
 //     let sum = 0;
 //     for (let value of users) {
