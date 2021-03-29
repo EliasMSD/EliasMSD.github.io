@@ -55,3 +55,50 @@ function includesEvenAge(arr){
     }
     return false;
 }
+
+/**
+ * reduce
+- find sum of numbers
+- find average of numbers
+- find max of numbers
+- find max for ages
+- use a chain of map filter reduce to find the average age of people with even number ages
+- use a chain of map filter reduce to find the average age of people with odd number ages
+ */
+// let numArray = [5, 0, 7, 77, -20, 300, 51, 2]
+function findSum(arr){
+    return arr.reduce((sum,n)=>sum+n,0)
+}
+// console.log(findSum(numArray))
+function findAverage(arr){
+    return arr.reduce((sum,n)=>sum+n,0)/arr.length;
+}
+function findMax(arr){
+   return arr.reduce((max,current)=>max>current?max:current,arr[0])
+}
+
+function findMaxAge(arr){
+    let maxAge=arr.reduce((max,current)=>max>current?max:current,arr[0])
+    //let maxAge=arr.reduce((max,current)=>max>current.age?max:current.age,arr[0].age)
+    //if we want to return the value only
+    return maxAge;
+}
+
+function filterEvenAgeAverage(arr) {
+    let len=arr.filter((obj)=>obj.age%2===0).length;
+    let result=[]
+    let sum=arr.filter((obj)=>obj.age%2===0).reduce((sum,obj)=>sum+obj.age,0);
+    result.push(sum)
+    let avg=result.map((n)=>n/len)[0];
+    return avg
+}
+function filterOddAgeAverage(arr) {
+    let len=arr.filter((obj)=>obj.age%2!==0).length;
+    let result=[]
+    let sum=arr.filter((obj)=>obj.age%2!==0).reduce((sum,obj)=>sum+obj.age,0);
+    result.push(sum)
+    let avg=result.map((n)=>n/len)[0];
+    return avg
+}
+
+
