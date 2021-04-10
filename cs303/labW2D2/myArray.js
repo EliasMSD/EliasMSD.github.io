@@ -9,7 +9,7 @@
  */
  
 function multiplyAll(elem) {​​​​​​​​
-    returnelem *elem
+    return elem * elem;
 }​​​​​​​​
 /**
  * 
@@ -23,9 +23,9 @@ for (let key of arr) {​​​​​​​​
         let result = multiplyAll(key)
 newArr.push(result)
     }​​​​​​​​
-    returnnewArr;
+    return newArr;
 }​​​​​​​​
-// console.log(myMap([1, 2, 3, 4, 5], multiplyAll))
+ console.log(myMap([1, 2, 3, 4, 5], multiplyAll))
 /**
  * 
  * @param{​​​​​​​​number}​​​​​​​​elem
@@ -57,7 +57,7 @@ newArray.push(key)
     }​​​​​​​​
     return newArray;
 }​​​​​​​​
-// console.log(myFilter([1, 2, 3, 4, 5, 9, 11, 12], oddValue))
+ console.log(myFilter([1, 2, 3, 4, 5, 9, 11, 12], oddValue))
  
 /**
  * 
@@ -65,7 +65,7 @@ newArray.push(key)
  * @param{​​​​​​​​number}​​​​​​​​b
  */
 function sumValue(a,b) {​​​​​​​​
-    returna +b;
+    return a +b;
 }​​​​​​​​
 /**
  * 
@@ -73,10 +73,10 @@ function sumValue(a,b) {​​​​​​​​
  * @param{​​​​​​​​numuber}​​​​​​​​sumValue
  */
 function myreduce(arr,sumValue) {​​​​​​​​
-    letsum = 0
+    let sum = 0
 for (let key of arr) {​​​​​​​​
 sum = sumValue(sum,key)
     }​​​​​​​​
-    returnsum
-}​​​​​​​​
+    return sum
+}console.log(myreduce([1,2,3,4],sumValue));​​​​​​​​
 
